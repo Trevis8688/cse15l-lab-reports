@@ -8,3 +8,5 @@ The `handleRequest` method is called when the URL is entered into the browser. T
 ![Image](/images/lr3.3.png)
 ![Image](/images/lr3.4.png)
 ![Image](/images/lr3.5.png)
+\
+Something that I learned in week 2 was how running a local server can be done with local host and different ports. Additionally, I learned how when using a network to run a server there is competition between port numbers for different servers/uses. In week 3 I learned the use of the commands scp and mkdir in practice by creating my ssh key.
