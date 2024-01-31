@@ -7,5 +7,4 @@ The `handleRequest` method is called when the URL is entered into the browser. T
 \
 ![Image](/images/lr3.3.png)
 ![Image](/images/lr3.4.png)
-The absolute path to the private key for my ssh login is `/Users/trevorduong/.ssh`. \
-The absolute path to the public key for my ssh login is `/home/linux/ieng6/oce/33/trduong/.ssh`. \
+![Image](/images/lr3.5.png)
