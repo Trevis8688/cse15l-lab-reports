@@ -24,7 +24,7 @@
   }
 ```
 **Symptom**
-
+![Image](/images/lr5.1.png)
 ## Non-failure Inducing Test
 ```java
 @Test
@@ -51,5 +51,8 @@
   }
 ```
 **Symptom**
+![Image](/images/lr5.2.png)
+## The Bug
+**Before**
 
 
