@@ -128,14 +128,14 @@ By incrementing `index2` instead of `index1` in the third while loop, the while 
     `  There is no evidence that NORAD headquarters or military officials in the NMCC knew-during the morning of September 11-that the Andrews planes were airborne and operating under different rules of engagement.`\
     `  The details of what happened on the morning of September 11 are complex, but they play out a simple theme. NORAD and the FAA were unprepared for the type of attacks launched against the United States on September 11, 2001. They struggled, under difficult circumstances, to improvise a homeland defense against an unprecedented challenge they had never before encountered and had never trained to meet.` \
 **Explanation:**
-Being provided the pattern "september", the `grep` command with the option `-i` returned all lines in the document that contained the pattern without case-sensitivity. In this case, lines with "September" were included. \
+Being provided the pattern "september", the `grep` command with the option `-i` returned all lines in the document that contained the pattern without case-sensitivity. In this case, lines with "September" were included. (Source: GREP Manual Page)\
 2. \
 **Input:**
 `grep -i "scooter" ./911report/chapter-1.txt`
 **Output:** 
 `  Among the sources that reflect other important events of that morning, there is no documentary evidence for this call, but the relevant sources are incomplete. Others nearby who were taking notes, such as the Vice President's chief of staff, Scooter Libby, who sat next to him, and Mrs. Cheney, did not note a call between the President and Vice President immediately after the Vice President entered the conference room.`\
 `  His reaction was described by Scooter Libby as quick and decisive, "in about the time it takes a batter to decide to swing." The Vice President authorized fighter aircraft to engage the inbound plane. He told us he based this authorization on his earlier conversation with the President. The military aide returned a few minutes later, probably between 10:12 and 10:18, and said the aircraft was 60 miles out. He again asked for authorization to engage. The Vice President again said yes.`\
-**Explanation:** Being provided the pattern "scooter", the `grep` command with the option `-i` returned all lines in the document that conatined the pattern without case-sensitivity. In this case, lines with "Scooter" were included. 
+**Explanation:** Being provided the pattern "scooter", the `grep` command with the option `-i` returned all lines in the document that conatined the pattern without case-sensitivity. In this case, lines with "Scooter" were included. (Source: GREP Manual Page)
 
 ### Examples of `-r` 
 
@@ -146,7 +146,7 @@ Being provided the pattern "september", the `grep` command with the option `-i` 
 `./911report/chapter-13.2.txt:            219. For Libby's characterization, see White House transcript, Scooter Libby`\
 `./911report/chapter-1.txt:    Among the sources that reflect other important events of that morning, there is no documentary evidence for this call, but the relevant sources are incomplete. Others nearby who were taking notes, such as the Vice President's chief of staff, Scooter Libby, who sat next to him, and Mrs. Cheney, did not note a call between the President and Vice President immediately after the Vice President entered the conference room. `\
 `./911report/chapter-1.txt:    His reaction was described by Scooter Libby as quick and decisive, "in about the time it takes a batter to decide to swing." The Vice President authorized fighter aircraft to engage the inbound plane. He told us he based this authorization on his earlier conversation with the President. The military aide returned a few minutes later, probably between 10:12 and 10:18, and said the aircraft was 60 miles out. He again asked for authorization to engage. The Vice President again said yes.` \
-**Explanation:** Being provided the pattern "Scooter", the `grep` command with the option `-r` searched all files and subdirectories of the directory `./911report` that matched the pattern. \
+**Explanation:** Being provided the pattern "Scooter", the `grep` command with the option `-r` searched all files and subdirectories of the directory `./911report` that matched the pattern. (Source: GREP Manual Page) \
 
 2. \
 **Input:** `grep -r "Jane Garvey" ./911report`\
@@ -159,7 +159,7 @@ Being provided the pattern "september", the `grep` command with the option `-i` 
 `./911report/chapter-3.txt:                agency's leadership. Neither Administrator Jane Garvey nor her deputy routinely`\
 `./911report/chapter-1.txt:    Within the FAA, the administrator, Jane Garvey, and her acting deputy, Monte Belger, had not been told of a confirmed hijacking before they learned from television that a plane had crashed.`\
 
-**Explanation:** Being provided the pattern "Jane Garvey", the `grep` command with the option `-r` searched all files and subdirectories of the directory `./911report` that matched the pattern. \
+**Explanation:** Being provided the pattern "Jane Garvey", the `grep` command with the option `-r` searched all files and subdirectories of the directory `./911report` that matched the pattern. (Source: GREP Manual Page) \
 
 ### Examples of `-n`
 1. \
@@ -172,14 +172,14 @@ Being provided the pattern "september", the `grep` command with the option `-i` 
 `588:    On the morning of September 11, Secretary Rumsfeld was having breakfast at the Pentagon with a group of members of Congress. He then returned to his office for his daily intelligence briefing. The Secretary was informed of the second strike in New York during the briefing; he resumed the briefing while awaiting more information. After the Pentagon was struck, Secretary Rumsfeld went to the parking lot to assist with rescue efforts.`\
 `706:    There is no evidence that NORAD headquarters or military officials in the NMCC knew-during the morning of September 11-that the Andrews planes were airborne and operating under different rules of engagement.`\
 `724:    The details of what happened on the morning of September 11 are complex, but they play out a simple theme. NORAD and the FAA were unprepared for the type of attacks launched against the United States on September 11, 2001. They struggled, under difficult circumstances, to improvise a homeland defense against an unprecedented challenge they had never before encountered and had never trained to meet.`\
-**Explanation:** Being provided the pattern "September", the `grep` command with the option `-n` returned all lines in the document that contained the pattern along with the line number. \
+**Explanation:** Being provided the pattern "September", the `grep` command with the option `-n` returned all lines in the document that contained the pattern along with the line number. (Source: GREP Manual Page) \
 
 2. \
 **Input:** `grep -n "Scooter" ./911report/chapter-1.txt` \
 **Output:** 
 `640:    Among the sources that reflect other important events of that morning, there is no documentary evidence for this call, but the relevant sources are incomplete. Others nearby who were taking notes, such as the Vice President's chief of staff, Scooter Libby, who sat next to him, and Mrs. Cheney, did not note a call between the President and Vice President immediately after the Vice President entered the conference room.`\
 `646:    His reaction was described by Scooter Libby as quick and decisive, "in about the time it takes a batter to decide to swing." The Vice President authorized fighter aircraft to engage the inbound plane. He told us he based this authorization on his earlier conversation with the President. The military aide returned a few minutes later, probably between 10:12 and 10:18, and said the aircraft was 60 miles out. He again asked for authorization to engage. The Vice President again said yes.`\
-**Explanation:** Being provided the pattern "Scooter", the `grep` command with the option `-n` returned all lines in the document that contained the pattern along with the line number. \
+**Explanation:** Being provided the pattern "Scooter", the `grep` command with the option `-n` returned all lines in the document that contained the pattern along with the line number. (Source: GREP Manual Page) \
 
 ### Examples of `-v`
 1. \
@@ -204,7 +204,7 @@ Being provided the pattern "september", the `grep` command with the option `-i` 
         Universal HIV testing and contact tracing adds an essential comprehensive public health
         approach to the epidemic that will be successful in reducing the ever-escalating numbers of
         new infections.
-  **Explanation:** Being provided the pattern "we", the `grep` command with the option `-v` returned all lines that did not contain the pattern "we".\
+  **Explanation:** Being provided the pattern "we", the `grep` command with the option `-v` returned all lines that did not contain the pattern "we". (Source: GREP Manual Page)\
 
 2. \
 **Input:** `grep -v "and" ./plos/pmed.0020028.txt >grep.txt` \
@@ -224,7 +224,7 @@ Being provided the pattern "september", the `grep` command with the option `-i` 
         approach to the epidemic that will be successful in reducing the ever-escalating numbers of
         new infections.
    
-**Explanation:** Being provided the pattern "and", the `grep` command with the option `-v` returned all lines that did not contain the pattern "and".
+**Explanation:** Being provided the pattern "and", the `grep` command with the option `-v` returned all lines that did not contain the pattern "and" (Source: GREP Manual Page).
 
 
 
