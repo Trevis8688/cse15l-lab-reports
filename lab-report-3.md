@@ -135,8 +135,10 @@ Being provided the pattern "september", the `grep` command with the option `-i` 
 2. \
 **Input:** `grep -i "scooter" ./911report/chapter-1.txt`
 **Output:** 
-`  Among the sources that reflect other important events of that morning, there is no documentary evidence for this call, but the relevant sources are incomplete. Others nearby who were taking notes, such as the Vice President's chief of staff, Scooter Libby, who sat next to him, and Mrs. Cheney, did not note a call between the President and Vice President immediately after the Vice President entered the conference room.
-`  His reaction was described by Scooter Libby as quick and decisive, "in about the time it takes a batter to decide to swing." The Vice President authorized fighter aircraft to engage the inbound plane. He told us he based this authorization on his earlier conversation with the President. The military aide returned a few minutes later, probably between 10:12 and 10:18, and said the aircraft was 60 miles out. He again asked for authorization to engage. The Vice President again said yes.`\
+```
+  Among the sources that reflect other important events of that morning, there is no documentary evidence for this call, but the relevant sources are incomplete. Others nearby who were taking notes, such as the Vice President's chief of staff, Scooter Libby, who sat next to him, and Mrs. Cheney, did not note a call between the President and Vice President immediately after the Vice President entered the conference room.
+  His reaction was described by Scooter Libby as quick and decisive, "in about the time it takes a batter to decide to swing." The Vice President authorized fighter aircraft to engage the inbound plane. He told us he based this authorization on his earlier conversation with the President. The military aide returned a few minutes later, probably between 10:12 and 10:18, and said the aircraft was 60 miles out. He again asked for authorization to engage. The Vice President again said yes.
+```
 **Explanation:** Being provided the pattern "scooter", the `grep` command with the option `-i` returned all lines in the document that conatined the pattern without case-sensitivity. In this case, lines with "Scooter" were included. (Source: GREP Manual Page)
 
 ### Examples of `-r` 
@@ -145,21 +147,25 @@ Being provided the pattern "september", the `grep` command with the option `-i` 
 **Input:**
 `grep -r "Scooter" ./911report` \
 **Output:**
-`./911report/chapter-13.2.txt:            219. For Libby's characterization, see White House transcript, Scooter Libby`\
-`./911report/chapter-1.txt:    Among the sources that reflect other important events of that morning, there is no documentary evidence for this call, but the relevant sources are incomplete. Others nearby who were taking notes, such as the Vice President's chief of staff, Scooter Libby, who sat next to him, and Mrs. Cheney, did not note a call between the President and Vice President immediately after the Vice President entered the conference room. `\
-`./911report/chapter-1.txt:    His reaction was described by Scooter Libby as quick and decisive, "in about the time it takes a batter to decide to swing." The Vice President authorized fighter aircraft to engage the inbound plane. He told us he based this authorization on his earlier conversation with the President. The military aide returned a few minutes later, probably between 10:12 and 10:18, and said the aircraft was 60 miles out. He again asked for authorization to engage. The Vice President again said yes.` \
+```
+./911report/chapter-13.2.txt:            219. For Libby's characterization, see White House transcript, Scooter Libby
+./911report/chapter-1.txt:    Among the sources that reflect other important events of that morning, there is no documentary evidence for this call, but the relevant sources are incomplete. Others nearby who were taking notes, such as the Vice President's chief of staff, Scooter Libby, who sat next to him, and Mrs. Cheney, did not note a call between the President and Vice President immediately after the Vice President entered the conference room. 
+./911report/chapter-1.txt:    His reaction was described by Scooter Libby as quick and decisive, "in about the time it takes a batter to decide to swing." The Vice President authorized fighter aircraft to engage the inbound plane. He told us he based this authorization on his earlier conversation with the President. The military aide returned a few minutes later, probably between 10:12 and 10:18, and said the aircraft was 60 miles out. He again asked for authorization to engage. The Vice President again said yes.
+```
 **Explanation:** Being provided the pattern "Scooter", the `grep` command with the option `-r` searched all files and subdirectories of the directory `./911report` that matched the pattern. (Source: GREP Manual Page) \
 
-2. \
+3. \
 **Input:** `grep -r "Jane Garvey" ./911report`\
 **Output:**
-`./911report/chapter-13.2.txt:            181. Jane Garvey interview (Jun. 30, 2004); Monte Belger interview (Apr. 20, 2004).`\
-`./911report/chapter-13.2.txt:            190. Patrick Gardner interview (May 12, 2004). For participants, see Jane Garvey`\
-`./911report/chapter-13.3.txt:                Priorities,"Mar. 18, 1999 (staff working paper). See also Jane Garvey prepared`\
-`./911report/chapter-13.3.txt:                informed on any pressing issues. Jane Garvey interview (Oct. 21, 2003); Monte Belger`\
-`./911report/chapter-13.3.txt:            63. Jane Garvey interview (Oct. 21, 2003).`\
-`./911report/chapter-3.txt:                agency's leadership. Neither Administrator Jane Garvey nor her deputy routinely`\
-`./911report/chapter-1.txt:    Within the FAA, the administrator, Jane Garvey, and her acting deputy, Monte Belger, had not been told of a confirmed hijacking before they learned from television that a plane had crashed.`\
+```
+./911report/chapter-13.2.txt:            181. Jane Garvey interview (Jun. 30, 2004); Monte Belger interview (Apr. 20, 2004).
+./911report/chapter-13.2.txt:            190. Patrick Gardner interview (May 12, 2004). For participants, see Jane Garvey
+./911report/chapter-13.3.txt:                Priorities,"Mar. 18, 1999 (staff working paper). See also Jane Garvey prepared
+./911report/chapter-13.3.txt:                informed on any pressing issues. Jane Garvey interview (Oct. 21, 2003); Monte Belger
+./911report/chapter-13.3.txt:            63. Jane Garvey interview (Oct. 21, 2003).
+./911report/chapter-3.txt:                agency's leadership. Neither Administrator Jane Garvey nor her deputy routinely
+./911report/chapter-1.txt:    Within the FAA, the administrator, Jane Garvey, and her acting deputy, Monte Belger, had not been told of a confirmed hijacking before they learned from television that a plane had crashed.
+```
 **Explanation:** Being provided the pattern "Jane Garvey", the `grep` command with the option `-r` searched all files and subdirectories of the directory `./911report` that matched the pattern. (Source: GREP Manual Page) \
 
 ### Examples of `-n`
@@ -179,16 +185,18 @@ Being provided the pattern "september", the `grep` command with the option `-i` 
 
 2. \
 **Input:** `grep -n "Scooter" ./911report/chapter-1.txt` \
-**Output:** 
-`640:    Among the sources that reflect other important events of that morning, there is no documentary evidence for this call, but the relevant sources are incomplete. Others nearby who were taking notes, such as the Vice President's chief of staff, Scooter Libby, who sat next to him, and Mrs. Cheney, did not note a call between the President and Vice President immediately after the Vice President entered the conference room.`\
-`646:    His reaction was described by Scooter Libby as quick and decisive, "in about the time it takes a batter to decide to swing." The Vice President authorized fighter aircraft to engage the inbound plane. He told us he based this authorization on his earlier conversation with the President. The military aide returned a few minutes later, probably between 10:12 and 10:18, and said the aircraft was 60 miles out. He again asked for authorization to engage. The Vice President again said yes.`\
+**Output:**
+```
+640:    Among the sources that reflect other important events of that morning, there is no documentary evidence for this call, but the relevant sources are incomplete. Others nearby who were taking notes, such as the Vice President's chief of staff, Scooter Libby, who sat next to him, and Mrs. Cheney, did not note a call between the President and Vice President immediately after the Vice President entered the conference room.
+646:    His reaction was described by Scooter Libby as quick and decisive, "in about the time it takes a batter to decide to swing." The Vice President authorized fighter aircraft to engage the inbound plane. He told us he based this authorization on his earlier conversation with the President. The military aide returned a few minutes later, probably between 10:12 and 10:18, and said the aircraft was 60 miles out. He again asked for authorization to engage. The Vice President again said yes.
+```
 **Explanation:** Being provided the pattern "Scooter", the `grep` command with the option `-n` returned all lines in the document that contained the pattern along with the line number. (Source: GREP Manual Page) \
 
 ### Examples of `-v`
 1. \
 **Input:** `grep -v "we" ./plos/pmed.0020028.txt >grep.txt` \
 **Output:**
-
+```
         Dr. Gerberding outlines critical steps for arresting the HIV/AIDS epidemic [1]. She
         suggests moving ahead with “ABCs” and with “D” for diagnosis and “R” for responsibility.
         These are good suggestions—with increased HIV testing and individuals taking responsibility
@@ -207,12 +215,13 @@ Being provided the pattern "september", the `grep` command with the option `-i` 
         Universal HIV testing and contact tracing adds an essential comprehensive public health
         approach to the epidemic that will be successful in reducing the ever-escalating numbers of
         new infections.
+```
   **Explanation:** Being provided the pattern "we", the `grep` command with the option `-v` returned all lines that did not contain the pattern "we". (Source: GREP Manual Page)\
 
 2. \
 **Input:** `grep -v "and" ./plos/pmed.0020028.txt >grep.txt` \
 **Output:**
-      
+```
         Dr. Gerberding outlines critical steps for arresting the HIV/AIDS epidemic [1]. She
         for their role in HIV spread, the epidemic might be slowed. We could continue to add
         incrementally to the alphabet soup of public health. But instead, we could choose to
@@ -226,7 +235,7 @@ Being provided the pattern "september", the `grep` command with the option `-i` 
         narrow an ethical focus—HIV infection itself is an abuse of women or of anyone else.
         approach to the epidemic that will be successful in reducing the ever-escalating numbers of
         new infections.
-   
+```
 **Explanation:** Being provided the pattern "and", the `grep` command with the option `-v` returned all lines that did not contain the pattern "and" (Source: GREP Manual Page).
 
 
