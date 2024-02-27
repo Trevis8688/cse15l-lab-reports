@@ -117,7 +117,7 @@ By incrementing `index2` instead of `index1` in the third while loop, the while 
 4. The option `-v` prints the lines that do not match the given pattern. (Source: GREP Manual Page)
 
 ### Examples of `-i` 
-1. \
+1.\
 **Input:** `grep -i "september" ./911report/chapter-1.txt` \
 **Output:** \
 `  Tuesday, September 11, 2001, dawned temperate and nearly cloudless in the eastern United States. Millions of men and women readied themselves for work. Some made their way to the Twin Towers, the signature structures of the World Trade Center complex in New York City. Others went to Arlington, Virginia, to the Pentagon. Across the Potomac River, the United States Congress was back in session. At the other end of Pennsylvania Avenue, people began to line up for a White House tour. In Sarasota, Florida, President George W. Bush went for an early morning run.` \
@@ -129,7 +129,7 @@ By incrementing `index2` instead of `index1` in the third while loop, the while 
 `  The details of what happened on the morning of September 11 are complex, but they play out a simple theme. NORAD and the FAA were unprepared for the type of attacks launched against the United States on September 11, 2001. They struggled, under difficult circumstances, to improvise a homeland defense against an unprecedented challenge they had never before encountered and had never trained to meet.` \
 **Explanation:**
 Being provided the pattern "september", the `grep` command with the option `-i` returned all lines in the document that contained the pattern without case-sensitivity. In this case, lines with "September" were included. (Source: GREP Manual Page)\
-3. \
+2. \
 **Input:**
 `grep -i "scooter" ./911report/chapter-1.txt`
 **Output:** 
