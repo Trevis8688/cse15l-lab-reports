@@ -12,8 +12,7 @@
 ### Source of error in java code
 ![Image](/images/lr9.5.png)
 The working directory is`/Users/trevorduong/CSE15l/docsearch`. The bug was that the path being given to DocSearchServer.java via command line arguments was a relative path from the working directory `/docsearch` rather than an absolute one. The Java code does not have access to the contents of the directory `/technical/` but rather to a nonexistent directory where the only contents are the directory itself, thus resulting in the bugged output. As seen in the fixed input, adding `./` attaches `/technical` to the current working directory thus creating an absolute path for the function `Paths.get()` to use which solves the bug.
-
-## Part 2
+## Part 2 - Reflection
 One thing valuable that I have learned in the second half in this quarter was the concept of debuggers and how to use them. Learning how to use JDB in lecture was a valuable introduction to the usefulness of debuggers, and it was especially cool to use it purely from the command line. A tutor showed me how to use debuggers more practically via the VSCode and IntelliJ IDEs.
 
 
